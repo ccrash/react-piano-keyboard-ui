@@ -4,16 +4,21 @@
     "main": "./index.js",
     "private": false,
     "peerDependencies": {
-        "react": "^16.12.0",
-        "prop-types": "^15.7.2"
+        "prop-types": "^15.7.2",
+        "react": "^16.12.0"
     },
     "babel": {
         "presets": [
-          "@babel/preset-env",
-          "@babel/preset-react"
+            "@babel/preset-env",
+            "@babel/preset-react"
         ],
         "plugins": [
-          "@babel/plugin-proposal-class-properties"
+            "@babel/plugin-proposal-class-properties"
         ]
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.7.4",
+        "@babel/preset-env": "^7.7.4",
+        "@babel/preset-react": "^7.7.4"
     }
 }
