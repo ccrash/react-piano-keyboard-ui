@@ -5,8 +5,9 @@
     "type": "module",
     "private": false,
     "peerDependencies": {
-        "prop-types": "^15.7.2",
-        "react": "^16.12.0"
+        "prop-types": "*",
+        "react": "*",
+        "react-dom": "*"
     },
     "babel": {
         "presets": [
@@ -21,5 +22,9 @@
         "@babel/plugin-proposal-class-properties": "^7.7.4",
         "@babel/preset-env": "^7.7.4",
         "@babel/preset-react": "^7.7.4"
+    },
+    "dependencies": {
+        "babel-runtime": "^6.26.0",
+        "classnames": "^2.2.6"
     }
 }
