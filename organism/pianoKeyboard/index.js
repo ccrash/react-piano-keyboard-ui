@@ -5,21 +5,7 @@ import PianoOctave from '../../molecule/pianoOctave'
 
 import style from './style'
 
-export default class PianoKeyboard extends Component {
-    
-    static defaultProps = {
-        octaves: 2,
-        width: 400,
-        height: 100,
-        onKeyPressed: (keyObject) => {}
-    }
-
-    static propTypes = {
-        octaves: PropTypes.number,
-        width: PropTypes.number,
-        height: PropTypes.number,
-        onKeyPressed: PropTypes.func,
-    }
+class PianoKeyboard extends Component {
 
     render() {
         const {octaves, height, width, onKeyPressed} = this.props;
@@ -36,3 +22,19 @@ export default class PianoKeyboard extends Component {
     }
 
 }
+  
+PanoKeyboard.defaultProps = {
+    octaves: 2,
+    width: 400,
+    height: 100,
+    onKeyPressed: (keyObject) => {}
+}
+
+PanoKeyboard.propTypes = {
+    octaves: PropTypes.number,
+    width: PropTypes.number,
+    height: PropTypes.number,
+    onKeyPressed: PropTypes.func,
+}
+
+export default PanoKeyboard

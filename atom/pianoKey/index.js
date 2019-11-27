@@ -3,18 +3,7 @@ import PropTypes from 'prop-types'
 
 import style from './style'
 
-export default class PianoKey extends Component {
-    
-    static defaultProps = {
-        octave: 1,
-        onKeyPressed: (keyObject) => {}
-    }
-
-    static propTypes = {
-        octave: PropTypes.number,
-        keyboardKey: PropTypes.object.isRequired,
-        onKeyPressed: PropTypes.func,
-    }
+class PianoKey extends Component {
 
     onKeyPressed = () => {
         const {keyboardKey, octave, onKeyPressed} = this.props;
@@ -33,3 +22,16 @@ export default class PianoKey extends Component {
         return <div style={this.determineKeyStyle()} onClick={this.onKeyPressed} />
     }
 }
+
+PianoKey.defaultProps = {
+    octave: 1,
+    onKeyPressed: (keyObject) => {}
+}
+
+PianoKey.propTypes = {
+    octave: PropTypes.number,
+    keyboardKey: PropTypes.object.isRequired,
+    onKeyPressed: PropTypes.func,
+}
+
+export default PianoKey

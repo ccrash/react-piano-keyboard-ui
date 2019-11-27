@@ -6,17 +6,7 @@ import PianoKey from '../../atom/pianoKey'
 
 import style from './style'
 
-export default class PianoOctave extends Component {
-    
-    static defaultProps = {
-        octave: 1,
-        onKeyPressed: (keyObject) => {}
-    }
-
-    static propTypes = {
-        octave: PropTypes.number,
-        onKeyPressed: PropTypes.func,
-    }
+class PianoOctave extends Component {
 
     renderKeys = () => {
         const { octave, onKeyPressed } = this.props;
@@ -30,3 +20,15 @@ export default class PianoOctave extends Component {
         return <span key={octave} style={style.octave}>{this.renderKeys()}</span>
     }
 }
+
+PianoOctave.defaultProps = {
+    octave: 1,
+    onKeyPressed: (keyObject) => {}
+}
+
+PianoOctave.propTypes = {
+    octave: PropTypes.number,
+    onKeyPressed: PropTypes.func,
+}
+
+export default PianoOctave
