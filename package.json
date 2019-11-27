@@ -1,0 +1,9 @@
+{
+    "name": "@ccrash/react-piano-keyboard-ui",
+    "version": "0.0.1",
+    "main": "index.js",
+    "private": false,
+    "peerDependencies": {
+        "react": "^16.12.0"
+    }
+}

@@ -1,0 +1,9 @@
+# OSX
+#
+.DS_Store
+
+# Project files
+webpack.local.config.js
+webpack.production.config.js
+.eslintrc
+.gitignore
